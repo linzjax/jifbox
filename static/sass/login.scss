@@ -1,0 +1,44 @@
+@import "bootstrap-theme";
+@import "bootstrap";
+@import url(http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700);
+
+body {
+    background-image: url(../img/pattern_photography.jpg);
+    color: #ddd;
+    background-color: white;
+    width: 100%;
+}
+
+.login-body {
+	width: 100%;
+	margin: 0 auto;
+	margin-top: 100px;
+}
+
+
+.jifbox-header {
+	margin: 0 auto;
+	width: 60%;
+	margin-bottom: 5em;
+}
+
+.user-instance-title {
+	font-size: 2em;
+	margin-bottom: 10px;
+}
+
+.login-form {
+	width: 100%;
+	text-align: center;
+	label {
+		text-align: left !important;
+	}
+	input {
+		margin: 0 auto;
+		color: #111;
+	}
+	button {
+		margin-top: 5px;
+		width: 50%;
+	}
+}

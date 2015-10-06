@@ -1,15 +1,21 @@
 {% extends "base.html" %}
 
 {% block content %}
+<link rel="stylesheet" href="/static/css/login.css">
+<div class='login-body'>
+ 	<nav class="jifbox-header">
+        <div class="container">
+            <div class="user-instance-title">{{title}} + </div><img class="logo" src="static/img/logo.svg" alt="jifbox"/>
+        </div>
+    </nav>
+    <div class='login-form'>
 
-    <h1>JIFBOX</h1>
+	    <h2>What's the password?</h2>
 
-    <h2>WHO ARE YOU?!</h2>
-
-    <form action="/login" method="post">
-   		<label>Password</label>
-    	<input type="password" name="password" class="block half-width field-light">
-    	<button class="button-blue">Login</button>
-    </form>
+	    <form action="/login" method="post">
+	    	<input type="password" name="password" class="block half-width field-light"><button class="button-blue btn-danger">Login</button>
+	    </form>
+	</div>
+</div>
 
 {% endblock %}

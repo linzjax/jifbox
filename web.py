@@ -45,6 +45,12 @@ if mongo_params.username and mongo_params.password:
 
 
 #
+# Title
+#
+title = os.environ.get('TITLE')
+
+
+#
 # services
 #
 
@@ -294,9 +300,10 @@ def login():
         elif password == BASIC_PASSWORD:
             user = User.basic_user()
             login_user(user)
-            return redirect(url_for('index'))        
+            return redirect(url_for('index'))     
 
-    return render_template('login.html')
+    context = {'title': title}
+    return render_template('login.html', **context)
 
 @app.route("/logout")
 def logout():
